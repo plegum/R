@@ -1,0 +1,5 @@
+source('SOURCE/FUNCTIONS_01.R')
+source('SOURCE/MAIN_02.r')
+source('SOURCE/UI_03.r')
+source('SOURCE/SERVER_04.r')
+shinyApp(UI, SERVER)

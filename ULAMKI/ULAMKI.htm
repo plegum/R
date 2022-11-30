@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>find</title>
+<script src="math.js"></script>
+</head>
+<body>
+Wpisz liczby:
+<input type="text"  id="myInput" size="300"><br/><br/>
+<button type="button" onclick="getSmallest();">START</button><br/><br/><br/>
+<div id="XID_BUTTON"></div>
+<SCRIPT>
+function getSmallest(){
+	var inputVal = document.getElementById("myInput").value;					
+	var s = null;
+	var s1 = null;
+	var k = null;
+	const XNUM = inputVal.split(' ');
+	var e = "";
+	XNUM.LEN = XNUM.length
+	for (let i = 0; i < XNUM.length; i++) {
+		var element = XNUM[i];
+		k = math.evaluate(element);
+		e = e+'<tr><th>'+element+'  ='+'</th><th>'+k+'</th></tr>';
+	}
+e = '<br/><table>' + e + '</table><br/>'
+document.getElementById("XID_BUTTON").innerHTML=e;
+}
+		
+document.getElementById("myInput").addEventListener(
+	"keyup", 
+	function(event) {
+		if (event.keyCode === 13) {
+			getSmallest();
+		return false;
+		}
+		if (event.keyCode === 46) {
+			document.getElementById("myInput").value="";
+		return false;
+		}
+	}
+)
+;
+</SCRIPT>
+</body>
+</html>
