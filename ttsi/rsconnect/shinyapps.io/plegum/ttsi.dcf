@@ -1,0 +1,13 @@
+name: ttsi
+title: ttsi
+username:
+account: plegum
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5278165
+bundleId: 5335549
+url: https://plegum.shinyapps.io/ttsi/
+when: 1638816329.00381
+lastSyncTime: 1638816329.00381
+asMultiple: FALSE
+asStatic: FALSE
